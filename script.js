@@ -11,7 +11,7 @@ tl.to("#yellow1",{
 tl.from("#yellow2",{
     top: "100%",
     delay: 0.6,
-    duration: 0.7,
+    duration: 0.5,
     ease: "expo.out"
 },"syn");
 
