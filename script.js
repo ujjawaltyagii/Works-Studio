@@ -32,7 +32,26 @@ tl.to("#loader",{
 
 loading()
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#main'),
-    smooth: true
-});
+function loco(){
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('#main'),
+        smooth: true
+    });
+    
+    // instance method from locomotive github repo for back to top
+    document.querySelector("#footer h2").addEventListener("click", ()=>{
+        scroll.scrollTo(0)
+    })
+    
+    
+    var ele = document.querySelectorAll(".parts")
+    var p2 = document.querySelector("#page2")
+    ele.forEach(function(el){
+        el.addEventListener("mouseenter", function(){
+            var bgImg = el.getAttribute("data-img")
+            p2.style.backgroundImage = `url(${bgImg})`
+        })
+    });
+}
+
+loco();
