@@ -331,7 +331,7 @@ html::-webkit-scrollbar {
     text-transform: uppercase;
 }
 
-i{
+#page1 i{
     position: absolute;
     bottom: 0;
     font-size: 3vw;
@@ -370,8 +370,9 @@ i{
         line-height: 7vw;
     }
 
-    i{
+    #page1 i{
         font-size: 10vw;
+        bottom: 7%;
     }
 
     #loader h1{
